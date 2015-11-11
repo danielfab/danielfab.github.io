@@ -94,30 +94,31 @@ pcb=LED1.add(pcb,XTAL1.x,IC1.pad[5].y,z,180)</p>
 
 <p>pcb = wire(pcb,w,
    IC1.pad[5],<br>
-  LED1.pad[1])</p>
-
-<p>R1 = R_1206('R1');
-pcb = R1.add(pcb, LED1.pad[2].x, J1.pad[3].y,z,90)</p>
-
-
-<p>pcb = wire(pcb,w,
-   LED1.pad[1],
-  R1.pad[2])</p>
+  LED1.pad[1])</p><br>
+<br>
+<p>R1 = R_1206('R1');<br>
+pcb = R1.add(pcb, LED1.pad[2].x, J1.pad[3].y,z,90)</p><br>
+<br><br
 
 <p>pcb = wire(pcb,w,
+   LED1.pad[1],<br>
+  R1.pad[2])</p><br>
+<br>
+<p>pcb = wire(pcb,w,<br>
    J1.pad[6],
-  R1.pad[1])</p>
-
-<p>BT1 = button_6mm('BT1');
-pcb = BT1.add(pcb,LED1.pad[1].x+.14, J1.pad[3].y-.06,z)</p>
-
-<p>pcb = wire(pcb,w,
-   IC1.pad[7],
-  BT1.pad[1])</p>
-
-<p>pcb = wire(pcb,w,
-   J1.pad[6],
-  BT1.pad[3])</p>
+  R1.pad[1])</p><br>
+<br>
+<p>BT1 = button_6mm('BT1');<br>
+pcb = BT1.add(pcb,LED1.pad[1].x+.14, J1.pad[3].y-.06,z)</p><br>
+<br>
+<p>pcb = wire(pcb,w,<br>
+   IC1.pad[7],<br>
+  BT1.pad[1])</p><br>
+<br>
+<p>pcb = wire(pcb,w,<br>
+   J1.pad[6],<br>
+  BT1.pad[3])</p><br>
+  <br>
 </p>
 
 <p><h4> Video Conferencing</h4></p>
