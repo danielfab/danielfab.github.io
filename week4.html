@@ -46,7 +46,7 @@
 
 <p><h2><b>Week 4 </h2></b></p>
 
-<p><h3>Day 1:  </h3></p>
+<p><h3><b>Day 1:  </b></h3></p>
 
 <p><h4>Electronics Design, Production & Programming </h4></p>
 
@@ -69,6 +69,55 @@ Fransisco explained how components can be added by adding code snippets from the
 
 
 
+</p>
+
+<p><h3><b>Day 2:  </b></h3></p>
+
+<p><h4>Clean Up Task </h4></p>
+
+<p>The day started with Francisco explaining about the important of cleaning up. This was followed by a quick clean up task. Within few minutes we removed all the rubbles and the lab was neat once again. </p> 
+
+<p><h4> Continuing with Kokopelli</h4></p>
+
+<p>Finally I figured out how to fix the Kokopelli installation issue and it was running fine on myVirtuabox Ubuntu.
+
+<p>Proff. Neil has created an inventory of electronic components inside a 4000 line code. In order to add components into a design, the code snippets can be taken from the code created by Niel and added to our design accordingly. </p>
+
+<p>Todays task was to add three additional components: A resistor, a button and an LED to the hello ftdi board design. This was done by adding the following code to the existing code.</p>
+
+<p>I used the instructions available on the above given link and also added all the Python libraries through pip. </p>
+
+Fransisco explained how components can be added by adding code snippets from the code inventory created by Niel. </p>
+
+<p>LED1 = LED_1206('LED1');
+pcb=LED1.add(pcb,XTAL1.x,IC1.pad[5].y,z,180)</p>
+
+<p>pcb = wire(pcb,w,
+   IC1.pad[5],
+  LED1.pad[1])</p>
+
+<p>R1 = R_1206('R1');
+pcb = R1.add(pcb, LED1.pad[2].x, J1.pad[3].y,z,90)</p>
+
+
+<p>pcb = wire(pcb,w,
+   LED1.pad[1],
+  R1.pad[2])</p>
+
+<p>pcb = wire(pcb,w,
+   J1.pad[6],
+  R1.pad[1])</p>
+
+<p>BT1 = button_6mm('BT1');
+pcb = BT1.add(pcb,LED1.pad[1].x+.14, J1.pad[3].y-.06,z)</p>
+
+<p>pcb = wire(pcb,w,
+   IC1.pad[7],
+  BT1.pad[1])</p>
+
+<p>pcb = wire(pcb,w,
+   J1.pad[6],
+  BT1.pad[3])</p>
 </p>
 
 
