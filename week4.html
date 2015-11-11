@@ -92,7 +92,6 @@ Fransisco explained how components can be added by adding code snippets from the
 <p>LED1 = LED_1206('LED1');<br>
 pcb=LED1.add(pcb,XTAL1.x,IC1.pad[5].y,z,180)<br>
 <br>
-
 pcb = wire(pcb,w,
    IC1.pad[5],<br>
   LED1.pad[1])<br>
@@ -100,13 +99,12 @@ pcb = wire(pcb,w,
 R1 = R_1206('R1');<br>
 pcb = R1.add(pcb, LED1.pad[2].x, J1.pad[3].y,z,90)<br>
 <br>
-
 pcb = wire(pcb,w,
    LED1.pad[1],<br>
   R1.pad[2])<br>
 <br>
-pcb = wire(pcb,w,<br>
-   J1.pad[6],
+pcb = wire(pcb,w,
+   J1.pad[6],<br>
   R1.pad[1])<br>
 <br>
 BT1 = button_6mm('BT1');<br>
