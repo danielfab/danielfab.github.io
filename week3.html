@@ -54,6 +54,8 @@
       
       <p><h3><a href="#vinyl">1. Laser Cutter: Introduction</a> <br> 
       <a href="#laseruse">2. Assignment: Using Laser cutter</a><br>
+            <a href="#antimony">2. Antimony 2D and 3D Design: Introduction</a><br>
+      <a href="#antimony2">3. Assignment: Designing using Antimony</a><br>
      
       
           
@@ -179,9 +181,85 @@
 
 Download sticker design file: <a href=https://www.dropbox.com/s/ulp9xlwz3zvckyv/bob.png?dl=0> lasercut.png</a> 
 
+    
+    <br<br>
+    
+    <p><h2><b><a id="antimony" name="antimony">3. Antimony: </a> Introduction</b> </h2></p>
+
+<br>
+
+Francisco introduced us to Antimony.Antimony is CAD software developd by Matt Keeter for making 3D design. This the one of the most interesting and simple software I learned using the PreFab course. 
 
 
 
+<br><br>
+
+<img src="images/antimony1.jpg" alt="Antimony Windows"><br><br>
+   
+Antimony has two windows, the view window and the graph window. View window shows the design in various angles and the graph window shows the list of 2D, 3D components that are inter-connected to make the final design. 
+
+<br><br>
+ Installation of Antimony is fairly simple. I downloaded Antimony for Matt Keeter github page(link below)
+<br><br>
+
+<a href=https://github.com/mkeeter/antimony> https://github.com/mkeeter/antimony</a> 
+
+
+
+
+<br><br>
+
+I downloaded the .dmg file and installed it like installing any other software on mac. <br><br>
+
+
+
+<b>How Anitmony works:</b><br><br>
+
+<img src="images/antimony2.jpg" alt="Antimony"><br><br>
+
+
+ - Various preset 3D and 3D drawings can be added to the graph by selecting from a drop down list.<br>
+ - Their properties like dimension, xyz position can be changed in the graph..<br>
+ - Various changes like extrude, 2D to 3D etc can be applied on them..<br>
+ - Then different drawings can be interconnected in the graph. .<br>
+ - Union, difference, copy etc. can also be performed on them..<br>
+ - Everything is done through the graph and the changes takes effect in the real time view. .<br>
+
+<br><br>
+
+
+
+
+
+
+    <p><h2><b><a id="antimony" name="antimony">3. Assignment: </a> Designing using Antimony</b> </h2></p> <br><br>
+
+<b>Milling bit holder assignment</b>
+
+<img src="images/antimony4.jpg" alt="Antimony Assignment"><br><br>
+
+
+
+I played around with a few trial designs and decided to design and 3D print and stand for holding Roland Modella milling bits. <br><br>
+
+
+
+These are the steps I followed on the graph to make that happen:
+<br><br>
+
+ - Created a rectangle with width 15 and height 65.<br>
+ - Extruded the rectangle at max 25 (this made it a 3D object)<br>
+ - Created a circle with radius 1.7<br>
+ - Made 1/3  2D array of this circle with dx and dy 20 so that the three circles are placed on the entre for the rectangle<br>
+ - Extruded the circle but setting max: 25 (circles became cylinders now)<br>
+ - Made a difference between the extruded rectangle and extruded circle. <br>
+ - Made another rectangle in x0: 15 and y0: 25 and made three more circles with radius 1.7<br>
+ - Repeated the steps done with the first set of circles and rectangle(extrude and difference)<br>
+ - Finally did a union on two sets of circles and rectangles and the final design was ready<br>
+ - Add "Export" in graph. Exported it in .stl format. <br><br>
+
+
+The design was 3D printed using Ultimaker 2
 
 
 
